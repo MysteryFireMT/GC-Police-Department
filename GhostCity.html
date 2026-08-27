@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ghost City | Police Department</title>
+
+<style>
+*{box-sizing:border-box}
+
+body{
+    margin:0;
+    font-family:Tahoma,Arial,sans-serif;
+    background:
+    radial-gradient(circle at top,#202630 0%,#0b0e13 45%,#030406 100%);
+    color:#fff;
+    min-height:100vh;
+}
+
+header{
+    text-align:center;
+    padding:55px 20px 35px;
+    border-bottom:1px solid #252a32;
+}
+
+header h1{
+    margin:0;
+    font-size:45px;
+    letter-spacing:6px;
+}
+
+header p{
+    margin-top:10px;
+    color:#969eaa;
+    letter-spacing:2px;
+}
+
+.container{
+    width:94%;
+    max-width:1250px;
+    margin:auto;
+    padding:30px 0 60px;
+}
+
+.search{
+    width:100%;
+    padding:16px 20px;
+    margin-bottom:25px;
+    border:1px solid #303640;
+    border-radius:14px;
+    outline:none;
+    background:#0d1015;
+    color:#fff;
+    font-size:16px;
+}
+
+.section{
+    margin-top:30px;
+}
+
+.title{
+    padding:17px 20px;
+    margin-bottom:12px;
+    border-right:4px solid #fff;
+    border-radius:10px;
+    background:#ffffff0d;
+    font-size:22px;
+    font-weight:bold;
+}
+
+table{
+    width:100%;
+    border-collapse:separate;
+    border-spacing:0;
+    overflow:hidden;
+    border-radius:14px;
+    border:1px solid #292e37;
+    background:#0b0e13f5;
+}
+
+th{
+    background:#181c23;
+    padding:15px;
+}
+
+td{
+    padding:14px;
+    text-align:center;
+    border-top:1px solid #252a31;
+}
+
+tr:hover td{
+    background:#ffffff08;
+}
+
+.code{
+    direction:ltr;
+    font-weight:bold;
+    white-space:nowrap;
+}
+
+.rank{
+    font-weight:bold;
+}
+
+.name{
+    color:#d8dce2;
+}
+
+.protocol{
+    text-align:right;
+    line-height:1.8;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#626a76;
+}
+
+@media(max-width:700px){
+    header h1{font-size:30px}
+    th,td{font-size:12px;padding:9px 5px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>GHOST CITY</h1>
+<p>POLICE DEPARTMENT</p>
+</header>
+
+<div class="container">
+
+<input class="search" id="search"
+placeholder="ابحث عن رتبة أو كود أو بروتوكول...">
+
+<!-- ==================== الرتب ==================== -->
+
+<div class="section">
+<div class="title">Police Department Ranks</div>
+
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Name</th>
+<th>Rank</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr><td class="code">P-1</td><td class="name">ENZO ALKETBI</td><td class="rank">Minister of Interior</td></tr>
+<tr><td class="code">P-2</td><td class="name">Salem Alketbi</td><td class="rank">Deputy Minister of Interior</td></tr>
+
+<tr><td class="code">A-1</td><td>—</td><td class="rank">Police Chief</td></tr>
+<tr><td class="code">A-2</td><td>—</td><td class="rank">Deputy Police Chief</td></tr>
+<tr><td class="code">A-3</td><td>—</td><td class="rank">Assistant Police Chief</td></tr>
+
+<tr><td class="code">G-0</td><td class="name">Arthur Smith</td><td class="rank">LSPD Chief</td></tr>
+<tr><td class="code">G-1</td><td>—</td><td class="rank">Deputy LSPD Chief</td></tr>
+
+<tr><td class="code">T-0</td><td>—</td><td class="rank">General</td></tr>
+<tr><td class="code">T-1</td><td>—</td><td class="rank">General</td></tr>
+<tr><td class="code">T-2</td><td>—</td><td class="rank">General</td></tr>
+
+<tr><td class="code">M-0</td><td>—</td><td class="rank">Lieutenant General</td></tr>
+
+<tr><td class="code">M-1</td><td>—</td><td class="rank">Major General</td></tr>
+<tr><td class="code">M-2</td><td>—</td><td class="rank">Major General</td></tr>
+<tr><td class="code">M-3</td><td>—</td><td class="rank">Major General</td></tr>
+
+<tr><td class="code">C-0</td><td>—</td><td class="rank">Colonel</td></tr>
+<tr><td class="code">C-1</td><td>—</td><td class="rank">Colonel</td></tr>
+<tr><td class="code">C-2</td><td>—</td><td class="rank">Colonel</td></tr>
+
+<tr><td class="code">C-4</td><td>—</td><td class="rank">Major</td></tr>
+<tr><td class="code">C-5</td><td>—</td><td class="rank">Major</td></tr>
+<tr><td class="code">C-6</td><td>—</td><td class="rank">Major</td></tr>
+
+<tr><td class="code">C-7</td><td>—</td><td class="rank">Captain</td></tr>
+<tr><td class="code">C-8</td><td>—</td><td class="rank">Captain</td></tr>
+<tr><td class="code">C-9</td><td>—</td><td class="rank">Captain</td></tr>
+
+<tr><td class="code">C-10</td><td>—</td><td class="rank">First Lieutenant</td></tr>
+<tr><td class="code">C-11</td><td>—</td><td class="rank">First Lieutenant</td></tr>
+<tr><td class="code">C-12</td><td>—</td><td class="rank">First Lieutenant</td></tr>
+<tr><td class="code">C-13</td><td>—</td><td class="rank">First Lieutenant</td></tr>
+<tr><td class="code">C-14</td><td>—</td><td class="rank">First Lieutenant</td></tr>
+<tr><td class="code">C-15</td><td>—</td><td class="rank">First Lieutenant</td></tr>
+
+<tr><td class="code">C-16</td><td>—</td><td class="rank">Lieutenant</td></tr>
+<tr><td class="code">C-17</td><td>—</td><td class="rank">Lieutenant</td></tr>
+<tr><td class="code">C-18</td><td>—</td><td class="rank">Lieutenant</td></tr>
+
+<tr><td class="code">U-1</td><td>—</td><td class="rank">Staff Sergeant</td></tr>
+<tr><td class="code">U-2</td><td>—</td><td class="rank">Staff Sergeant</td></tr>
+<tr><td class="code">U-3</td><td>—</td><td class="rank">Staff Sergeant</td></tr>
+<tr><td class="code">U-4</td><td>—</td><td class="rank">Staff Sergeant</td></tr>
+<tr><td class="code">U-5</td><td>—</td><td class="rank">Staff Sergeant</td></tr>
+<tr><td class="code">U-6</td><td>—</td><td class="rank">Staff Sergeant</td></tr>
+<tr><td class="code">U-7</td><td>—</td><td class="rank">Staff Sergeant</td></tr>
+<tr><td class="code">U-8</td><td>—</td><td class="rank">Staff Sergeant</td></tr>
+<tr><td class="code">U-9</td><td>—</td><td class="rank">Staff Sergeant</td></tr>
+<tr><td class="code">U-10</td><td>—</td><td class="rank">Staff Sergeant</td></tr>
+<tr><td class="code">U-11</td><td>—</td><td class="rank">Staff Sergeant</td></tr>
+<tr><td class="code">U-12</td><td>—</td><td class="rank">Staff Sergeant</td></tr>
+<tr><td class="code">U-13</td><td>—</td><td class="rank">Staff Sergeant</td></tr>
+<tr><td class="code">U-14</td><td>—</td><td class="rank">Staff Sergeant</td></tr>
+<tr><td class="code">U-15</td><td>—</td><td class="rank">Staff Sergeant</td></tr>
+
+<tr><td class="code">U-17</td><td>—</td><td class="rank">First Sergeant</td></tr>
+<tr><td class="code">U-18</td><td>—</td><td class="rank">First Sergeant</td></tr>
+<tr><td class="code">U-19</td><td>—</td><td class="rank">First Sergeant</td></tr>
+<tr><td class="code">U-20</td><td>—</td><td class="rank">First Sergeant</td></tr>
+<tr><td class="code">U-21</td><td>—</td><td class="rank">First Sergeant</td></tr>
+<tr><td class="code">U-22</td><td>—</td><td class="rank">First Sergeant</td></tr>
+<tr><td class="code">U-23</td><td>—</td><td class="rank">First Sergeant</td></tr>
+<tr><td class="code">U-24</td><td>—</td><td class="rank">First Sergeant</td></tr>
+<tr><td class="code">U-25</td><td>—</td><td class="rank">First Sergeant</td></tr>
+<tr><td class="code">U-26</td><td>—</td><td class="rank">First Sergeant</td></tr>
+<tr><td class="code">U-27</td><td>—</td><td class="rank">First Sergeant</td></tr>
+<tr><td class="code">U-28</td><td>—</td><td class="rank">First Sergeant</td></tr>
+<tr><td class="code">U-29</td><td>—</td><td class="rank">First Sergeant</td></tr>
+
+<tr><td class="code">U-31</td><td>—</td><td class="rank">Sergeant</td></tr>
+<tr><td class="code">U-32</td><td>—</td><td class="rank">Sergeant</td></tr>
+<tr><td class="code">U-33</td><td>—</td><td class="rank">Sergeant</td></tr>
+<tr><td class="code">U-34</td><td>—</td><td class="rank">Sergeant</td></tr>
+<tr><td class="code">U-35</td><td>—</td><td class="rank">Sergeant</td></tr>
+<tr><td class="code">U-36</td><td>—</td><td class="rank">Sergeant</td></tr>
+<tr><td class="code">U-37</td><td>—</td><td class="rank">Sergeant</td></tr>
+<tr><td class="code">U-38</td><td>—</td><td class="rank">Sergeant</td></tr>
+<tr><td class="code">U-39</td><td>—</td><td class="rank">Sergeant</td></tr>
+<tr><td class="code">U-40</td><td>—</td><td class="rank">Sergeant</td></tr>
+<tr><td class="code">U-41</td><td>—</td><td class="rank">Sergeant</td></tr>
+<tr><td class="code">U-42</td><td>—</td><td class="rank">Sergeant</td></tr>
+<tr><td class="code">U-43</td><td>—</td><td class="rank">Sergeant</td></tr>
+<tr><td class="code">U-44</td><td>—</td><td class="rank">Sergeant</td></tr>
+<tr><td class="code">U-45</td><td>—</td><td class="rank">Sergeant</td></tr>
+<tr><td class="code">U-46</td><td>—</td><td class="rank">Sergeant</td></tr>
+<tr><td class="code">U-47</td><td>—</td><td class="rank">Sergeant</td></tr>
+
+<tr><td class="code">U-49</td><td>—</td><td class="rank">Senior Officer</td></tr>
+<tr><td class="code">U-50</td><td>—</td><td class="rank">Senior Officer</td></tr>
+<tr><td class="code">U-51</td><td>—</td><td class="rank">Senior Officer</td></tr>
+<tr><td class="code">U-52</td><td>—</td><td class="rank">Senior Officer</td></tr>
+<tr><td class="code">U-53</td><td>—</td><td class="rank">Senior Officer</td></tr>
+<tr><td class="code">U-54</td><td>—</td><td class="rank">Senior Officer</td></tr>
+<tr><td class="code">U-55</td><td>—</td><td class="rank">Senior Officer</td></tr>
+<tr><td class="code">U-56</td><td>—</td><td class="rank">Senior Officer</td></tr>
+<tr><td class="code">U-57</td><td>—</td><td class="rank">Senior Officer</td></tr>
+<tr><td class="code">U-58</td><td>—</td><td class="rank">Senior Officer</td></tr>
+<tr><td class="code">U-59</td><td>—</td><td class="rank">Senior Officer</td></tr>
+<tr><td class="code">U-60</td><td>—</td><td class="rank">Senior Officer</td></tr>
+<tr><td class="code">U-61</td><td>—</td><td class="rank">Senior Officer</td></tr>
+<tr><td class="code">U-62</td><td>—</td><td class="rank">Senior Officer</td></tr>
+
+<tr><td class="code">U-64</td><td>—</td><td class="rank">Officer III</td></tr>
+<tr><td class="code">U-65</td><td>—</td><td class="rank">Officer III</td></tr>
+<tr><td class="code">U-66</td><td>—</td><td class="rank">Officer III</td></tr>
+<tr><td class="code">U-67</td><td>—</td><td class="rank">Officer III</td></tr>
+<tr><td class="code">U-68</td><td>—</td><td class="rank">Officer III</td></tr>
+<tr><td class="code">U-69</td><td>—</td><td class="rank">Officer III</td></tr>
+<tr><td class="code">U-70</td><td>—</td><td class="rank">Officer III</td></tr>
+<tr><td class="code">U-71</td><td>—</td><td class="rank">Officer III</td></tr>
+
+<tr><td class="code">U-73</td><td>—</td><td class="rank">Officer II</td></tr>
+<tr><td class="code">U-74</td><td>—</td><td class="rank">Officer II</td></tr>
+<tr><td class="code">U-75</td><td>—</td><td class="rank">Officer II</td></tr>
+<tr><td class="code">U-76</td><td>—</td><td class="rank">Officer II</td></tr>
+<tr><td class="code">U-77</td><td>—</td><td class="rank">Officer II</td></tr>
+<tr><td class="code">U-78</td><td>—</td><td class="rank">Officer II</td></tr>
+<tr><td class="code">U-79</td><td>—</td><td class="rank">Officer II</td></tr>
+<tr><td class="code">U-80</td><td>—</td><td class="rank">Officer II</td></tr>
+
+<tr><td class="code">U-82</td><td>—</td><td class="rank">Officer I</td></tr>
+<tr><td class="code">U-83</td><td>—</td><td class="rank">Officer I</td></tr>
+<tr><td class="code">U-84</td><td>—</td><td class="rank">Officer I</td></tr>
+<tr><td class="code">U-85</td><td>—</td><td class="rank">Officer I</td></tr>
+<tr><td class="code">U-86</td><td>—</td><td class="rank">Officer I</td></tr>
+<tr><td class="code">U-87</td><td>—</td><td class="rank">Officer I</td></tr>
+
+<tr><td class="code">U-89</td><td>—</td><td class="rank">Solo Cadet</td></tr>
+<tr><td class="code">U-90</td><td>—</td><td class="rank">Solo Cadet</td></tr>
+<tr><td class="code">U-91</td><td>—</td><td class="rank">Solo Cadet</td></tr>
+<tr><td class="code">U-92</td><td>—</td><td class="rank">Solo Cadet</td></tr>
+<tr><td class="code">U-93</td><td>—</td><td class="rank">Solo Cadet</td></tr>
+
+<tr><td class="code">U-95</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-96</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-97</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-98</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-99</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-100</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-101</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-102</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-103</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-104</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-105</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-106</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-107</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-108</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-109</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-110</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-111</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-112</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-113</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-114</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-115</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-116</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-117</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-118</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-119</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-120</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-121</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-122</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-123</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-124</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-125</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-126</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-127</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-128</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-129</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-130</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-131</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-132</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-133</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-134</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-135</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-136</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-137</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-138</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-139</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-140</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-141</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-142</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-143</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-144</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-145</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-146</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-147</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-148</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-149</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-150</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-151</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-152</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-153</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-154</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-155</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-156</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-157</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-158</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-159</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-160</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-161</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-162</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-163</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-164</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-165</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-166</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-167</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-168</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-169</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-170</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-171</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-172</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-173</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-174</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-175</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-176</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-177</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-178</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-179</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-180</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-181</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-182</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-183</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-184</td><td>—</td><td class="rank">Cadet</td></tr>
+<tr><td class="code">U-185</td><td>—</td><td class="rank">Cadet</td></tr>
+
+</tbody>
+</table>
+</div>
+
+
+<!-- ==================== البروتوكولات ==================== -->
+
+<div class="section">
+<div class="title">البروتوكولات</div>
+
+<table>
+<thead>
+<tr>
+<th>الكود</th>
+<th>النطق</th>
+<th>البروتوكول</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr><td class="code">Code 0</td><td>كود زيرو</td><td class="protocol">استنفار أمني، تتوجه جميع الوحدات للحالة ويبدأ الاستنفار من رتبة Captain.</td></tr>
+<tr><td class="code">Code 1</td><td>كود ون</td><td class="protocol">بدون سفتي ولا صوت.</td></tr>
+<tr><td class="code">Code 2</td><td>كود تو</td><td class="protocol">سفتي بدون صوت.</td></tr>
+<tr><td class="code">Code 3</td><td>كود ثري</td><td class="protocol">سفتي صوت.</td></tr>
+<tr><td class="code">Code 4</td><td>كود فور</td><td class="protocol">المنطقة آمنة وخالية.</td></tr>
+<tr><td class="code">Code 5</td><td>كود فايف</td><td class="protocol">التوجه إلى مركز العمليات.</td></tr>
+<tr><td class="code">Code 6</td><td>كود سكس</td><td class="protocol">جاري التحقق من المكان أو الحالة وتفتيش المنطقة.</td></tr>
+<tr><td class="code">Code 7</td><td>كود سفن</td><td class="protocol">مسح البصمات وتصوير مسرح الجريمة ورفع التقرير.</td></tr>
+
+<tr><td class="code">0-1</td><td>زيرو ون</td><td class="protocol">استراحة أو تسجيل خروج مؤقت.</td></tr>
+<tr><td class="code">0-2</td><td>زيرو تو</td><td class="protocol">الإشارة واضحة.</td></tr>
+<tr><td class="code">0-3</td><td>زيرو ثري</td><td class="protocol">التأكد من إشارة الراديو.</td></tr>
+<tr><td class="code">0-4</td><td>زيرو فور</td><td class="protocol">إلغاء البلاغ.</td></tr>
+<tr><td class="code">0-5</td><td>زيرو فايف</td><td class="protocol">الشرطي مشغول.</td></tr>
+<tr><td class="code">0-6</td><td>زيرو سكس</td><td class="protocol">تكرار البلاغ.</td></tr>
+<tr><td class="code">0-7</td><td>زيرو سفن</td><td class="protocol">تسجيل خروج.</td></tr>
+<tr><td class="code">0-8</td><td>زيرو إيت</td><td class="protocol">تسجيل دخول.</td></tr>
+<tr><td class="code">0-9</td><td>زيرو ناين</td><td class="protocol">تم الانتهاء من الحالة.</td></tr>
+
+<tr><td class="code">10-0</td><td>تن زيرو</td><td class="protocol">الشرطي بحاجة إلى مسعف.</td></tr>
+<tr><td class="code">10-1</td><td>تن ون</td><td class="protocol">مطاردة مركبة.</td></tr>
+<tr><td class="code">10-2</td><td>تن تو</td><td class="protocol">غير صحيح.</td></tr>
+<tr><td class="code">10-3</td><td>تن ثري</td><td class="protocol">استيقاف مروري.</td></tr>
+<tr><td class="code">10-4</td><td>تن فور</td><td class="protocol">علم / تم الاستلام.</td></tr>
+<tr><td class="code">10-5</td><td>تن فايف</td><td class="protocol">سرقة سيارة.</td></tr>
+<tr><td class="code">10-6</td><td>تن سكس</td><td class="protocol">سرقة منزل.</td></tr>
+<tr><td class="code">10-7</td><td>تن سفن</td><td class="protocol">سرقة بقالة.</td></tr>
+<tr><td class="code">10-8</td><td>تن إيت</td><td class="protocol">سرقة مجوهرات.</td></tr>
+<tr><td class="code">10-9</td><td>تن ناين</td><td class="protocol">سرقة شاحنة مصرف.</td></tr>
+<tr><td class="code">10-10</td><td>تن تن</td><td class="protocol">مصرف.</td></tr>
+<tr><td class="code">10-11</td><td>تن إليفن</td><td class="protocol">سرقة بنك بوليتو.</td></tr>
+<tr><td class="code">10-12</td><td>تن تولف</td><td class="protocol">سرقة البنك المركزي.</td></tr>
+<tr><td class="code">10-16</td><td>تن سكستين</td><td class="protocol">سرقة الجزيرة.</td></tr>
+<tr><td class="code">10-17</td><td>تن سفنتين</td><td class="protocol">مطاردة على الأقدام.</td></tr>
+<tr><td class="code">10-18</td><td>تن إيتين</td><td class="protocol">سرقة القطار.</td></tr>
+<tr><td class="code">10-19</td><td>تن ناينتين</td><td class="protocol">التوجه إلى الموقع.</td></tr>
+
+<tr><td class="code">UR-20</td><td>يور توينتي</td><td class="protocol">موقعك.</td></tr>
+
+<tr><td class="code">20-1</td><td>توينتي ون</td><td class="protocol">تجمع عصابات.</td></tr>
+<tr><td class="code">20-2</td><td>توينتي تو</td><td class="protocol">تبادل إطلاق نار.</td></tr>
+<tr><td class="code">20-3</td><td>توينتي ثري</td><td class="protocol">أحتاج دعم.</td></tr>
+<tr><td class="code">20-4</td><td>توينتي فور</td><td class="protocol">الأشخاص لديهم رهينة.</td></tr>
+
+<tr><td class="code">10-33</td><td>تن ثيرتي ثري</td><td class="protocol">هروب من السجن.</td></tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+
+<footer>
+GHOST CITY • POLICE DEPARTMENT
+</footer>
+
+<script>
+document.getElementById("search").addEventListener("input",function(){
+    const value=this.value.toLowerCase();
+
+    document.querySelectorAll("tbody tr").forEach(row=>{
+        row.style.display=
+        row.innerText.toLowerCase().includes(value) ? "" : "none";
+    });
+});
+</script>
+
+</body>
+</html>
